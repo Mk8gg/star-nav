@@ -3,7 +3,7 @@ import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
-  title: "星标导航 · GitHub 著名开源软件收录",
+  title: "GitHub Star · 著名开源软件收录",
   description: "一目了然的 GitHub 著名开源软件收录页：卡片浏览、分类筛选、关键词搜索，star 数每小时自动刷新。",
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site-header">
           <div className="header-inner">
             <div>
-              <h1>⭐ 星标导航</h1>
+              <h1>⭐ GitHub Star</h1>
               <p className="subtitle">GitHub 著名开源软件收录 · 打开就一目了然</p>
             </div>
             <ThemeToggle />
