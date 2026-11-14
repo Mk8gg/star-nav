@@ -51,32 +51,5 @@ export default async function Home() {
     })
   );
 
-  const totalStars = items.reduce((s, it) => s + it.stars, 0);
-  const categoryCount = new Set(items.map((it) => it.category)).size;
-  const fmtTotal =
-    totalStars >= 1000 ? (totalStars / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(totalStars);
-
-  return (
-    <>
-      <Explorer items={items} />
-      <section className="intro">
-        <div className="intro-panel">
-          <div className="intro-stats">
-            <div className="intro-stat">
-              <strong>{items.length}</strong>
-              <span>收录项目</span>
-            </div>
-            <div className="intro-stat">
-              <strong>{categoryCount}</strong>
-              <span>分类</span>
-            </div>
-            <div className="intro-stat">
-              <strong>{fmtTotal}</strong>
-              <span>总 star</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+  return <Explorer items={items} />;
 }
