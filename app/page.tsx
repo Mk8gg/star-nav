@@ -9,47 +9,33 @@ type LocalEntry = {
   blurb: string;
   category: string;
   tags?: string[];
+  /* Snapshot of GitHub data, refreshed by scripts/refresh-stars.py and
+     committed with the repo, so the page never depends on GitHub's
+     unauthenticated rate limit from Vercel's shared IPs. The /api/stars
+     poll still refreshes numbers live whenever GitHub cooperates. */
+  stars?: number;
+  language?: string | null;
+  pushedAt?: string;
 };
-
-async function fetchRepoMeta(full: string) {
-  try {
-    const r = await fetch(`https://api.github.com/repos/${full}`, {
-      headers: { Accept: "application/vnd.github+json" },
-      next: { revalidate: 3600 },
-    });
-    if (!r.ok) return null;
-    const d = await r.json();
-    return {
-      stars: typeof d.stargazers_count === "number" ? d.stargazers_count : 0,
-      language: d.language as string | null,
-      pushedAt: d.pushed_at as string,
-    };
-  } catch {
-    return null;
-  }
-}
 
 export default async function Home() {
   const raw = await readFile(path.join(process.cwd(), "data", "projects.json"), "utf-8");
   const entries = JSON.parse(raw) as LocalEntry[];
 
-  const items: ProjectItem[] = await Promise.all(
-    entries.map(async (e) => {
-      const meta = await fetchRepoMeta(e.repo);
-      const [owner, name] = e.repo.split("/");
-      return {
-        repo: e.repo,
-        owner,
-        name,
-        blurb: e.blurb,
-        category: e.category,
-        tags: e.tags ?? [],
-        stars: meta?.stars ?? 0,
-        language: meta?.language ?? null,
-        pushedAt: meta?.pushedAt ?? "",
-      };
-    })
-  );
+  const items: ProjectItem[] = entries.map((e) => {
+    const [owner, name] = e.repo.split("/");
+    return {
+      repo: e.repo,
+      owner,
+      name,
+      blurb: e.blurb,
+      category: e.category,
+      tags: e.tags ?? [],
+      stars: e.stars ?? 0,
+      language: e.language ?? null,
+      pushedAt: e.pushedAt ?? "",
+    };
+  });
 
   return <Explorer items={items} />;
 }
