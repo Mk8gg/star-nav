@@ -26,9 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main>{children}</main>
-        <footer className="site-footer">
-          数据来自 GitHub 公开接口，star 数每小时自动刷新 · 收录清单在仓库 data/projects.json 里维护
-        </footer>
       </body>
     </html>
   );
