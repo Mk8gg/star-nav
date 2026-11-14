@@ -22,7 +22,7 @@ async function fetchRepoMeta(full: string) {
     return {
       stars: typeof d.stargazers_count === "number" ? d.stargazers_count : 0,
       language: d.language as string | null,
-      updatedAt: d.updated_at as string,
+      pushedAt: d.pushed_at as string,
     };
   } catch {
     return null;
@@ -46,7 +46,7 @@ export default async function Home() {
         tags: e.tags ?? [],
         stars: meta?.stars ?? 0,
         language: meta?.language ?? null,
-        updatedAt: meta?.updatedAt ?? "",
+        pushedAt: meta?.pushedAt ?? "",
       };
     })
   );

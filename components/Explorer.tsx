@@ -11,7 +11,7 @@ export type ProjectItem = {
   tags: string[];
   stars: number;
   language: string | null;
-  updatedAt: string;
+  pushedAt: string;
 };
 
 const REFRESH_MS = 60_000;
@@ -37,7 +37,7 @@ function fmtStars(n: number): string {
   return String(n);
 }
 
-type StarMap = Record<string, { stars: number; updatedAt: string }>;
+type StarMap = Record<string, { stars: number; pushedAt: string }>;
 
 export default function Explorer({ items }: { items: ProjectItem[] }) {
   const [liveItems, setLiveItems] = useState<ProjectItem[]>(items);
@@ -58,8 +58,8 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
           prev.map((it) => {
             const m = data[it.repo];
             if (!m) return it;
-            if (m.stars === it.stars && m.updatedAt === it.updatedAt) return it;
-            return { ...it, stars: m.stars, updatedAt: m.updatedAt || it.updatedAt };
+            if (m.stars === it.stars && m.pushedAt === it.pushedAt) return it;
+            return { ...it, stars: m.stars, pushedAt: m.pushedAt || it.pushedAt };
           })
         );
       } catch {
@@ -89,7 +89,7 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
       return hay.includes(q);
     });
     list = [...list].sort((a, b) =>
-      sort === "stars" ? b.stars - a.stars : (b.updatedAt || "").localeCompare(a.updatedAt || "")
+      sort === "stars" ? b.stars - a.stars : (b.pushedAt || "").localeCompare(a.pushedAt || "")
     );
     return list;
   }, [liveItems, query, category, sort]);

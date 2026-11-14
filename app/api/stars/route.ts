@@ -3,7 +3,7 @@ import path from "path";
 
 export const revalidate = 600;
 
-type StarInfo = { stars: number; updatedAt: string };
+type StarInfo = { stars: number; pushedAt: string };
 
 export async function GET() {
   const raw = await readFile(path.join(process.cwd(), "data", "projects.json"), "utf-8");
@@ -21,7 +21,7 @@ export async function GET() {
         const d = await r.json();
         out[e.repo] = {
           stars: typeof d.stargazers_count === "number" ? d.stargazers_count : 0,
-          updatedAt: (d.updated_at as string) ?? "",
+          pushedAt: (d.pushed_at as string) ?? "",
         };
       } catch {
         /* keep the entry out; client keeps its previous value */
