@@ -16,22 +16,6 @@ export type ProjectItem = {
 
 const REFRESH_MS = 60_000;
 
-const LANG_COLORS: Record<string, string> = {
-  TypeScript: "#3178c6",
-  JavaScript: "#f1e05a",
-  Python: "#3572A5",
-  Go: "#00ADD8",
-  Rust: "#dea584",
-  Kotlin: "#A97BFF",
-  "C++": "#f34b7d",
-  C: "#555555",
-  "C#": "#178600",
-  Shell: "#89e051",
-  Dart: "#00B4AB",
-  Swift: "#F05138",
-  Java: "#b07219",
-};
-
 function fmtStars(n: number): string {
   if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
   return String(n);
@@ -153,22 +137,13 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
                     <span className="repo-name">{it.name}</span>
                     <span className="repo-owner">{it.repo}</span>
                   </div>
-                  <span className="stars" key={it.stars}>
-                    ⭐ {fmtStars(it.stars)}
-                  </span>
                 </div>
                 <p className="blurb">{it.blurb}</p>
                 <div className="card-bottom">
                   <span className="cat">{it.category}</span>
-                  {it.language && (
-                    <span className="lang">
-                      <span
-                        className="lang-dot"
-                        style={{ background: LANG_COLORS[it.language] ?? "#888" }}
-                      />
-                      {it.language}
-                    </span>
-                  )}
+                  <span className="stars" key={it.stars}>
+                    ⭐ {fmtStars(it.stars)}
+                  </span>
                   {it.tags.slice(0, 2).map((t) => (
                     <span key={t} className="tag">
                       {t}
