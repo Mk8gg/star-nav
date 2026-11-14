@@ -51,5 +51,39 @@ export default async function Home() {
     })
   );
 
-  return <Explorer items={items} />;
+  const totalStars = items.reduce((s, it) => s + it.stars, 0);
+  const categoryCount = new Set(items.map((it) => it.category)).size;
+  const fmtTotal =
+    totalStars >= 1000 ? (totalStars / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(totalStars);
+
+  return (
+    <>
+      <Explorer items={items} />
+      <section className="intro">
+        <div className="intro-panel">
+          <h2>关于 GitHub Star</h2>
+          <p>
+            这里收录站长逐个挑选的 GitHub 开源软件，每一个都配了一句中文介绍，点任意卡片就能直达仓库。
+          </p>
+          <p>
+            用顶部的搜索框和分类标签可以快速定位想找的工具；卡片上的 star 数和开发语言会自动同步 GitHub 的最新数据。
+          </p>
+          <div className="intro-stats">
+            <div className="intro-stat">
+              <strong>{items.length}</strong>
+              <span>收录项目</span>
+            </div>
+            <div className="intro-stat">
+              <strong>{categoryCount}</strong>
+              <span>分类</span>
+            </div>
+            <div className="intro-stat">
+              <strong>{fmtTotal}</strong>
+              <span>总 star</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

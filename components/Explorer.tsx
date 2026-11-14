@@ -95,10 +95,11 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
         <p className="empty">没有找到匹配的软件，换个关键词试试。</p>
       ) : (
         <div className="grid">
-          {filtered.map((it) => (
+          {filtered.map((it, i) => (
             <a
               key={it.repo}
               className="card"
+              style={{ animationDelay: `${Math.min(i, 12) * 55}ms` }}
               href={`https://github.com/${it.repo}`}
               target="_blank"
               rel="noopener noreferrer"
