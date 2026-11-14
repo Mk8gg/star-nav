@@ -484,6 +484,21 @@ body::after {
     gap: 10px;
   }
 
+  /* name gets its own full-width row so it is not squeezed by avatar + stars */
+  .card-head {
+    flex-wrap: wrap;
+  }
+
+  .card-head .who {
+    order: 3;
+    flex: 1 1 100%;
+    margin-top: 8px;
+  }
+
+  .card-head .stars {
+    margin-left: auto;
+  }
+
   .card {
     padding: 13px;
     border-radius: 16px;
