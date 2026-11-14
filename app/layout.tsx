@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "一目了然的 GitHub 著名开源软件收录页：卡片浏览、分类筛选、关键词搜索，star 数每小时自动刷新。",
 };
 
-const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.dataset.theme=t;}else{document.documentElement.dataset.theme='dark';}}catch(e){document.documentElement.dataset.theme='dark';}})();`;
+const themeScript = `(function(){document.documentElement.dataset.theme='dark';try{localStorage.setItem('theme','dark');}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
