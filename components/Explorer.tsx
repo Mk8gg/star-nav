@@ -30,6 +30,8 @@ const LANG_COLORS: Record<string, string> = {
   Java: "#b07219",
 };
 
+const PINNED_REPO = "Eynnzerr/TelemetryCleaner";
+
 function fmtStars(n: number): string {
   if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
   return String(n);
@@ -57,6 +59,11 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
     list = [...list].sort((a, b) =>
       sort === "stars" ? b.stars - a.stars : (b.updatedAt || "").localeCompare(a.updatedAt || "")
     );
+    const pinIdx = list.findIndex((it) => it.repo === PINNED_REPO);
+    if (pinIdx > 0) {
+      const [pinned] = list.splice(pinIdx, 1);
+      list.unshift(pinned);
+    }
     return list;
   }, [items, query, category, sort]);
 
@@ -118,6 +125,7 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
                   <span className="repo-name">{it.name}</span>
                   <span className="repo-owner">{it.repo}</span>
                 </div>
+                {it.repo === PINNED_REPO && <span className="pin">置顶</span>}
                 <span className="stars">⭐ {fmtStars(it.stars)}</span>
               </div>
               <p className="blurb">{it.blurb}</p>
