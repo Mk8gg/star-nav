@@ -14,7 +14,6 @@ export type ProjectItem = {
   updatedAt: string;
 };
 
-const PINNED_REPO = "Eynnzerr/TelemetryCleaner";
 const REFRESH_MS = 60_000;
 
 const LANG_COLORS: Record<string, string> = {
@@ -92,11 +91,6 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
     list = [...list].sort((a, b) =>
       sort === "stars" ? b.stars - a.stars : (b.updatedAt || "").localeCompare(a.updatedAt || "")
     );
-    const pinIdx = list.findIndex((it) => it.repo === PINNED_REPO);
-    if (pinIdx > 0) {
-      const [pinned] = list.splice(pinIdx, 1);
-      list.unshift(pinned);
-    }
     return list;
   }, [liveItems, query, category, sort]);
 
@@ -163,7 +157,6 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
                     <span className="repo-name">{it.name}</span>
                     <span className="repo-owner">{it.repo}</span>
                   </div>
-                  {it.repo === PINNED_REPO && <span className="pin">置顶</span>}
                   <span className="stars" key={it.stars}>
                     ⭐ {fmtStars(it.stars)}
                   </span>
