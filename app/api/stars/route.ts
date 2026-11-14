@@ -1,7 +1,7 @@
 import { readFile } from "fs/promises";
 import path from "path";
 
-export const revalidate = 300;
+export const revalidate = 600;
 
 type StarInfo = { stars: number; updatedAt: string };
 
