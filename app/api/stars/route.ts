@@ -15,7 +15,7 @@ export async function GET() {
       try {
         const r = await fetch(`https://api.github.com/repos/${e.repo}`, {
           headers: { Accept: "application/vnd.github+json" },
-          next: { revalidate: 300 },
+          next: { revalidate: 600 },
         });
         if (!r.ok) return;
         const d = await r.json();
@@ -29,7 +29,14 @@ export async function GET() {
     })
   );
 
-  return Response.json(out, {
-    headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600" },
-  });
+  // Never let a failed or partial fetch poison the CDN cache for long:
+  // full result caches 10 minutes, partial 60 seconds, empty not at all.
+  const got = Object.keys(out).length;
+  const cache =
+    got === entries.length
+      ? "public, s-maxage=600, stale-while-revalidate=1200"
+      : got > 0
+        ? "public, s-maxage=60, stale-while-revalidate=120"
+        : "no-store";
+  return Response.json(out, { headers: { "Cache-Control": cache } });
 }
