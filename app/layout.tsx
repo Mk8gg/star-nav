@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="header-inner">
             <div>
               <h1>⭐ GitHub Star</h1>
-              <p className="subtitle">GitHub 著名开源软件收录 · 打开就一目了然</p>
+              <p className="subtitle">GitHub 著名开源软件收录</p>
             </div>
             <ThemeToggle />
           </div>
