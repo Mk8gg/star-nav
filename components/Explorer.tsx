@@ -43,7 +43,7 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
   const [liveItems, setLiveItems] = useState<ProjectItem[]>(items);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("全部");
-  const [sort, setSort] = useState<"stars" | "updated">("stars");
+  const [sort, setSort] = useState<"stars" | "updated">("updated");
 
   /* poll the star API so counts update on their own while the page is open */
   useEffect(() => {
