@@ -94,10 +94,6 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
     return list;
   }, [liveItems, query, category, sort]);
 
-  const totalStars = liveItems.reduce((s, it) => s + it.stars, 0);
-  const fmtTotal =
-    totalStars >= 1000 ? (totalStars / 1000).toFixed(1).replace(/\.0$/, "") + "k" : String(totalStars);
-
   return (
     <>
       <div className="wrap">
@@ -185,26 +181,7 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
         )}
       </div>
 
-      <section className="intro">
-        <div className="intro-panel">
-          <div className="intro-stats">
-            <div className="intro-stat">
-              <strong>{liveItems.length}</strong>
-              <span>收录项目</span>
-            </div>
-            <div className="intro-stat">
-              <strong>{categories.length - 1}</strong>
-              <span>分类</span>
-            </div>
-            <div className="intro-stat">
-              <strong key={totalStars} className="stat-pop">
-                {fmtTotal}
-              </strong>
-              <span>总 star</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <p className="sort-note">默认按最近更新排序，右上角可切换为按 star 数；star 数每分钟自动更新。</p>
     </>
   );
 }

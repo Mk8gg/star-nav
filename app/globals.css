@@ -382,6 +382,15 @@ body::after {
   font-size: 15px;
 }
 
+.sort-note {
+  max-width: 1160px;
+  margin: 28px auto 42px;
+  padding: 0 16px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 /* intro section under the cards */
 .intro {
   max-width: 1160px;
