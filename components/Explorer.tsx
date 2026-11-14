@@ -74,24 +74,6 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
     };
   }, []);
 
-  /* scroll-driven reveal: cards slide up and fade in as they enter the
-     viewport, and softly leave again when scrolled out — both directions */
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const els = document.querySelectorAll<HTMLElement>("[data-card]");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => e.target.classList.toggle("pre", !e.isIntersecting));
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
-    );
-    els.forEach((el) => {
-      el.classList.add("pre");
-      io.observe(el);
-    });
-    return () => io.disconnect();
-  }, [filtered]);
-
   const categories = useMemo(() => {
     const seen: string[] = [];
     for (const it of liveItems) if (!seen.includes(it.category)) seen.push(it.category);
@@ -111,6 +93,24 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
     );
     return list;
   }, [liveItems, query, category, sort]);
+
+  /* scroll-driven reveal: cards slide up and fade in as they enter the
+     viewport, and softly leave again when scrolled out — both directions */
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const els = document.querySelectorAll<HTMLElement>("[data-card]");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => e.target.classList.toggle("pre", !e.isIntersecting));
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
+    );
+    els.forEach((el) => {
+      el.classList.add("pre");
+      io.observe(el);
+    });
+    return () => io.disconnect();
+  }, [filtered]);
 
   return (
     <>
