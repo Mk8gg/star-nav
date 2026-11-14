@@ -181,7 +181,7 @@ export default function Explorer({ items }: { items: ProjectItem[] }) {
         )}
       </div>
 
-      <p className="sort-note">默认按最近更新排序，右上角可切换为按 star 数；star 数每分钟自动更新。</p>
+      <p className="sort-note">本页面按照最新更新排序</p>
     </>
   );
 }

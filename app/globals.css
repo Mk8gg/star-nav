@@ -383,12 +383,31 @@ body::after {
 }
 
 .sort-note {
+  display: flex;
+  align-items: center;
+  gap: 18px;
   max-width: 1160px;
-  margin: 28px auto 42px;
+  margin: 34px auto 46px;
   padding: 0 16px;
-  text-align: center;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 13.5px;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+}
+
+.sort-note::before,
+.sort-note::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+
+.sort-note::before {
+  background: linear-gradient(90deg, transparent, var(--glass-border));
+}
+
+.sort-note::after {
+  background: linear-gradient(90deg, var(--glass-border), transparent);
 }
 
 /* intro section under the cards */
