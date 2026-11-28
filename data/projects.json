@@ -1,1 +1,350 @@
-[{"repo": "RocketChat/Rocket.Chat", "blurb": "开源的团队聊天与协作平台，支持消息、语音与视频，可自托管", "category": "通讯工具", "tags": ["团队聊天", "自托管"], "stars": 46588, "language": "TypeScript", "pushedAt": "2026-11-27T22:11:43Z"}, {"repo": "FrizzleM/SideInstaller", "blurb": "在 iOS 设备上全程本地安装 SideStore 的侧载安装器，无需电脑", "category": "系统工具", "tags": ["iOS", "侧载"], "stars": 2262, "language": "Swift", "pushedAt": "2026-11-27T21:24:16Z"}, {"repo": "microsoft/vscode", "blurb": "全球最流行的开源代码编辑器，插件生态最丰富", "category": "开发工具", "tags": ["编辑器", "IDE"], "stars": 195808, "language": "TypeScript", "pushedAt": "2026-11-27T22:13:04Z"}, {"repo": "n8n-io/n8n", "blurb": "工作流自动化平台，AI 节点齐全，可自托管", "category": "AI工具", "tags": ["自动化", "工作流"], "stars": 212396, "language": "TypeScript", "pushedAt": "2026-11-27T22:06:50Z"}, {"repo": "FluentRead/FluentRead", "blurb": "浏览器沉浸式翻译扩展，双语对照阅读外文网页", "category": "效率工具", "tags": ["浏览器扩展", "翻译"], "stars": 11213, "language": "TypeScript", "pushedAt": "2026-11-27T18:53:07Z"}, {"repo": "Rongronggg9/RSS-to-Telegram-Bot", "blurb": "把 RSS 订阅推送到 Telegram 的机器人，注重阅读体验", "category": "效率工具", "tags": ["RSS", "Telegram", "机器人"], "stars": 2183, "language": "Python", "pushedAt": "2026-11-24T01:27:03Z"}, {"repo": "imagineVid/Awesome-muse-video-prompts-and-skills", "blurb": "Muse Video 提示词合集，带生成效果对比，多语言含中文", "category": "AI工具", "tags": ["Muse", "提示词"], "stars": 15, "language": "TypeScript", "pushedAt": "2026-11-27T13:31:46Z"}, {"repo": "SagerNet/sing-box", "blurb": "新一代通用代理平台，众多客户端的内核来源", "category": "代理工具", "tags": ["代理", "内核"], "stars": 40383, "language": "Go", "pushedAt": "2026-11-27T15:56:05Z"}, {"repo": "komari-monitor/komari", "blurb": "轻量级服务器监控面板，多台节点的探针集中一处管理", "category": "系统工具", "tags": ["服务器监控", "探针"], "stars": 7245, "language": "Go", "pushedAt": "2026-11-25T14:24:06Z"}, {"repo": "AIsouler/MyClash", "blurb": "Mihomo 覆写脚本与配置文件，防 DNS 泄露，内置分流与地区策略", "category": "代理工具", "tags": ["Mihomo", "Clash", "分流"], "stars": 1340, "language": "JavaScript", "pushedAt": "2026-11-26T14:34:17Z"}, {"repo": "louislam/uptime-kuma", "blurb": "自托管的网站与服务状态监控，带公开状态页", "category": "系统工具", "tags": ["状态监控", "自托管"], "stars": 94969, "language": "JavaScript", "pushedAt": "2026-11-27T06:17:22Z"}, {"repo": "sub-store-org/Sub-Store", "blurb": "订阅管理神器：聚合、转换并同步各代理客户端的订阅", "category": "代理工具", "tags": ["订阅管理", "自托管"], "stars": 11001, "language": "JavaScript", "pushedAt": "2026-11-27T00:31:11Z"}, {"blurb": "基于 Shizuku 免 Root 清除国产安卓预装的隐私数据收集模块", "category": "安卓工具", "repo": "Eynnzerr/TelemetryCleaner", "tags": ["隐私", "Shizuku", "免Root"], "stars": 3629, "language": "Kotlin", "pushedAt": "2026-11-27T08:17:27Z"}, {"blurb": "现代化的安卓权限管理工具，兼容 Shizuku 与 Dhizuku", "category": "安卓工具", "repo": "HmnDev-Tech/shevery", "tags": ["Shizuku", "权限管理", "ADB"], "stars": 1788, "language": "Kotlin", "pushedAt": "2026-11-27T17:47:43Z"}, {"repo": "Johnshall/Shadowrocket-ADBlock-Rules-Forever", "blurb": "Shadowrocket 规则集，强劲广告过滤，每日自动重新构建", "category": "代理工具", "tags": ["Shadowrocket", "广告过滤", "规则"], "stars": 32455, "pushedAt": "2026-11-26T23:02:48Z"}, {"repo": "chen08209/FlClash", "blurb": "基于 Mihomo 的多平台代理客户端，简洁易用、开源无广告", "category": "代理工具", "tags": ["Mihomo", "客户端", "跨平台"], "stars": 65909, "language": "Dart", "pushedAt": "2026-11-26T07:58:26Z"}, {"repo": "p90rushb666/RootToolbox", "blurb": "Root 环境下查看管理 Tricky Store keybox 的工具", "category": "安卓工具", "tags": ["Root", "Tricky Store", "Magisk"], "stars": 105, "language": "Kotlin", "pushedAt": "2026-11-12T16:44:03Z"}, {"repo": "connectbot/mosh4android", "blurb": "安卓上的 Mosh 客户端，弱网与切换网络时 SSH 会话不掉线", "category": "安卓工具", "tags": ["SSH", "终端", "Mosh"], "stars": 0, "language": "C++", "pushedAt": "2026-11-12T05:17:32Z"}, {"blurb": "视频转字幕、翻译、AI 配音与字幕烧录的一站式桌面工具", "category": "AI工具", "repo": "buxuku/SmartSub", "tags": ["字幕", "Whisper", "AI配音"], "stars": 6179, "language": "TypeScript", "pushedAt": "2026-11-25T02:44:59Z"}, {"repo": "jackwener/DSH-Android", "blurb": "免 Root 在手机上跑 DeepSeek，能读屏操作 App 的 AI 助手", "category": "AI工具", "tags": ["AI Agent", "DeepSeek", "Shizuku"], "stars": 1101, "language": "Kotlin", "pushedAt": "2026-11-24T04:48:42Z"}, {"repo": "masonmosen/muse-video-prompt-skill", "blurb": "Muse 视频生成实战技能：六段式提示词、拼接成长片、抽帧验证", "category": "AI工具", "tags": ["Muse技能", "提示词"], "stars": 361, "language": "Python", "pushedAt": "2026-11-05T08:30:27Z"}, {"blurb": "Pixel Tensor 的 IMS 配置工具，为大陆三大运营商适配 VoLTE 与 VoWiFi", "category": "安卓工具", "repo": "Pixel-Tailor-CN/TensorIMS", "tags": ["Pixel", "VoLTE", "Shizuku"], "stars": 724, "language": "Kotlin", "pushedAt": "2026-11-24T02:55:54Z"}, {"blurb": "通过 Shizuku 测试 SIM 国家与运营商设置的安卓开发工具", "category": "安卓工具", "repo": "eigenlux-ai/roamer", "tags": ["Shizuku", "开发测试", "本地化"], "stars": 65, "language": "Kotlin", "pushedAt": "2026-10-22T10:13:13Z"}, {"repo": "cloudreve/cloudreve", "blurb": "自建云盘系统，支持多种存储后端、分享与离线下载", "category": "系统工具", "tags": ["网盘", "自托管"], "stars": 29023, "language": "Go", "pushedAt": "2026-11-27T07:12:55Z"}, {"repo": "MaheshTechnicals/Sealplus", "blurb": "Seal 增强版：安卓视频/音频下载器，基于 yt-dlp", "category": "安卓工具", "tags": ["下载器", "yt-dlp"], "stars": 1681, "language": "Kotlin", "pushedAt": "2026-10-14T15:06:14Z"}, {"repo": "LongLights/sing-box_template_merge_sub-store", "blurb": "把 sing-box 模板与 Sub-Store 订阅合并生成的脚本", "category": "代理工具", "tags": ["Sub-Store", "sing-box", "模板"], "stars": 158, "language": "JavaScript", "pushedAt": "2026-11-25T17:21:49Z"}, {"repo": "ATH-MaaS/Pixelle-Video", "blurb": "AI 短视频引擎：文案、配图、配音、合成一键成片", "category": "AI工具", "tags": ["AI视频", "短视频"], "stars": 30572, "language": "Python", "pushedAt": "2026-06-14T12:40:58Z"}]
+[
+  {
+    "repo": "RocketChat/Rocket.Chat",
+    "blurb": "开源的团队聊天与协作平台，支持消息、语音与视频，可自托管",
+    "category": "通讯工具",
+    "tags": [
+      "团队聊天",
+      "自托管"
+    ],
+    "stars": 46588,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-27T22:11:43Z"
+  },
+  {
+    "repo": "jub0t/Concat",
+    "blurb": "开源的 CapCut 替代品，免费的本地视频剪辑工具",
+    "category": "影音工具",
+    "tags": [
+      "视频剪辑",
+      "开源"
+    ],
+    "stars": 22523,
+    "language": "Rust",
+    "pushedAt": "2026-11-27T19:52:13Z"
+  },
+  {
+    "repo": "FrizzleM/SideInstaller",
+    "blurb": "在 iOS 设备上全程本地安装 SideStore 的侧载安装器，无需电脑",
+    "category": "系统工具",
+    "tags": [
+      "iOS",
+      "侧载"
+    ],
+    "stars": 2262,
+    "language": "Swift",
+    "pushedAt": "2026-11-27T21:24:16Z"
+  },
+  {
+    "repo": "microsoft/vscode",
+    "blurb": "全球最流行的开源代码编辑器，插件生态最丰富",
+    "category": "开发工具",
+    "tags": [
+      "编辑器",
+      "IDE"
+    ],
+    "stars": 195808,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-27T22:13:04Z"
+  },
+  {
+    "repo": "n8n-io/n8n",
+    "blurb": "工作流自动化平台，AI 节点齐全，可自托管",
+    "category": "AI工具",
+    "tags": [
+      "自动化",
+      "工作流"
+    ],
+    "stars": 212396,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-27T22:06:50Z"
+  },
+  {
+    "repo": "FluentRead/FluentRead",
+    "blurb": "浏览器沉浸式翻译扩展，双语对照阅读外文网页",
+    "category": "效率工具",
+    "tags": [
+      "浏览器扩展",
+      "翻译"
+    ],
+    "stars": 11213,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-27T18:53:07Z"
+  },
+  {
+    "repo": "Rongronggg9/RSS-to-Telegram-Bot",
+    "blurb": "把 RSS 订阅推送到 Telegram 的机器人，注重阅读体验",
+    "category": "效率工具",
+    "tags": [
+      "RSS",
+      "Telegram",
+      "机器人"
+    ],
+    "stars": 2183,
+    "language": "Python",
+    "pushedAt": "2026-11-24T01:27:03Z"
+  },
+  {
+    "repo": "imagineVid/Awesome-muse-video-prompts-and-skills",
+    "blurb": "Muse Video 提示词合集，带生成效果对比，多语言含中文",
+    "category": "AI工具",
+    "tags": [
+      "Muse",
+      "提示词"
+    ],
+    "stars": 15,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-27T13:31:46Z"
+  },
+  {
+    "repo": "SagerNet/sing-box",
+    "blurb": "新一代通用代理平台，众多客户端的内核来源",
+    "category": "代理工具",
+    "tags": [
+      "代理",
+      "内核"
+    ],
+    "stars": 40383,
+    "language": "Go",
+    "pushedAt": "2026-11-27T15:56:05Z"
+  },
+  {
+    "repo": "komari-monitor/komari",
+    "blurb": "轻量级服务器监控面板，多台节点的探针集中一处管理",
+    "category": "系统工具",
+    "tags": [
+      "服务器监控",
+      "探针"
+    ],
+    "stars": 7245,
+    "language": "Go",
+    "pushedAt": "2026-11-25T14:24:06Z"
+  },
+  {
+    "repo": "AIsouler/MyClash",
+    "blurb": "Mihomo 覆写脚本与配置文件，防 DNS 泄露，内置分流与地区策略",
+    "category": "代理工具",
+    "tags": [
+      "Mihomo",
+      "Clash",
+      "分流"
+    ],
+    "stars": 1340,
+    "language": "JavaScript",
+    "pushedAt": "2026-11-26T14:34:17Z"
+  },
+  {
+    "repo": "louislam/uptime-kuma",
+    "blurb": "自托管的网站与服务状态监控，带公开状态页",
+    "category": "系统工具",
+    "tags": [
+      "状态监控",
+      "自托管"
+    ],
+    "stars": 94969,
+    "language": "JavaScript",
+    "pushedAt": "2026-11-27T06:17:22Z"
+  },
+  {
+    "repo": "sub-store-org/Sub-Store",
+    "blurb": "订阅管理神器：聚合、转换并同步各代理客户端的订阅",
+    "category": "代理工具",
+    "tags": [
+      "订阅管理",
+      "自托管"
+    ],
+    "stars": 11001,
+    "language": "JavaScript",
+    "pushedAt": "2026-11-27T00:31:11Z"
+  },
+  {
+    "blurb": "基于 Shizuku 免 Root 清除国产安卓预装的隐私数据收集模块",
+    "category": "安卓工具",
+    "repo": "Eynnzerr/TelemetryCleaner",
+    "tags": [
+      "隐私",
+      "Shizuku",
+      "免Root"
+    ],
+    "stars": 3629,
+    "language": "Kotlin",
+    "pushedAt": "2026-11-27T08:17:27Z"
+  },
+  {
+    "blurb": "现代化的安卓权限管理工具，兼容 Shizuku 与 Dhizuku",
+    "category": "安卓工具",
+    "repo": "HmnDev-Tech/shevery",
+    "tags": [
+      "Shizuku",
+      "权限管理",
+      "ADB"
+    ],
+    "stars": 1788,
+    "language": "Kotlin",
+    "pushedAt": "2026-11-27T17:47:43Z"
+  },
+  {
+    "repo": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
+    "blurb": "Shadowrocket 规则集，强劲广告过滤，每日自动重新构建",
+    "category": "代理工具",
+    "tags": [
+      "Shadowrocket",
+      "广告过滤",
+      "规则"
+    ],
+    "stars": 32455,
+    "pushedAt": "2026-11-26T23:02:48Z"
+  },
+  {
+    "repo": "chen08209/FlClash",
+    "blurb": "基于 Mihomo 的多平台代理客户端，简洁易用、开源无广告",
+    "category": "代理工具",
+    "tags": [
+      "Mihomo",
+      "客户端",
+      "跨平台"
+    ],
+    "stars": 65909,
+    "language": "Dart",
+    "pushedAt": "2026-11-26T07:58:26Z"
+  },
+  {
+    "repo": "p90rushb666/RootToolbox",
+    "blurb": "Root 环境下查看管理 Tricky Store keybox 的工具",
+    "category": "安卓工具",
+    "tags": [
+      "Root",
+      "Tricky Store",
+      "Magisk"
+    ],
+    "stars": 105,
+    "language": "Kotlin",
+    "pushedAt": "2026-11-12T16:44:03Z"
+  },
+  {
+    "repo": "connectbot/mosh4android",
+    "blurb": "安卓上的 Mosh 客户端，弱网与切换网络时 SSH 会话不掉线",
+    "category": "安卓工具",
+    "tags": [
+      "SSH",
+      "终端",
+      "Mosh"
+    ],
+    "stars": 0,
+    "language": "C++",
+    "pushedAt": "2026-11-12T05:17:32Z"
+  },
+  {
+    "blurb": "视频转字幕、翻译、AI 配音与字幕烧录的一站式桌面工具",
+    "category": "AI工具",
+    "repo": "buxuku/SmartSub",
+    "tags": [
+      "字幕",
+      "Whisper",
+      "AI配音"
+    ],
+    "stars": 6179,
+    "language": "TypeScript",
+    "pushedAt": "2026-11-25T02:44:59Z"
+  },
+  {
+    "repo": "jackwener/DSH-Android",
+    "blurb": "免 Root 在手机上跑 DeepSeek，能读屏操作 App 的 AI 助手",
+    "category": "AI工具",
+    "tags": [
+      "AI Agent",
+      "DeepSeek",
+      "Shizuku"
+    ],
+    "stars": 1101,
+    "language": "Kotlin",
+    "pushedAt": "2026-11-24T04:48:42Z"
+  },
+  {
+    "repo": "masonmosen/muse-video-prompt-skill",
+    "blurb": "Muse 视频生成实战技能：六段式提示词、拼接成长片、抽帧验证",
+    "category": "AI工具",
+    "tags": [
+      "Muse技能",
+      "提示词"
+    ],
+    "stars": 361,
+    "language": "Python",
+    "pushedAt": "2026-11-05T08:30:27Z"
+  },
+  {
+    "blurb": "Pixel Tensor 的 IMS 配置工具，为大陆三大运营商适配 VoLTE 与 VoWiFi",
+    "category": "安卓工具",
+    "repo": "Pixel-Tailor-CN/TensorIMS",
+    "tags": [
+      "Pixel",
+      "VoLTE",
+      "Shizuku"
+    ],
+    "stars": 724,
+    "language": "Kotlin",
+    "pushedAt": "2026-11-24T02:55:54Z"
+  },
+  {
+    "blurb": "通过 Shizuku 测试 SIM 国家与运营商设置的安卓开发工具",
+    "category": "安卓工具",
+    "repo": "eigenlux-ai/roamer",
+    "tags": [
+      "Shizuku",
+      "开发测试",
+      "本地化"
+    ],
+    "stars": 65,
+    "language": "Kotlin",
+    "pushedAt": "2026-10-22T10:13:13Z"
+  },
+  {
+    "repo": "cloudreve/cloudreve",
+    "blurb": "自建云盘系统，支持多种存储后端、分享与离线下载",
+    "category": "系统工具",
+    "tags": [
+      "网盘",
+      "自托管"
+    ],
+    "stars": 29023,
+    "language": "Go",
+    "pushedAt": "2026-11-27T07:12:55Z"
+  },
+  {
+    "repo": "MaheshTechnicals/Sealplus",
+    "blurb": "Seal 增强版：安卓视频/音频下载器，基于 yt-dlp",
+    "category": "安卓工具",
+    "tags": [
+      "下载器",
+      "yt-dlp"
+    ],
+    "stars": 1681,
+    "language": "Kotlin",
+    "pushedAt": "2026-10-14T15:06:14Z"
+  },
+  {
+    "repo": "LongLights/sing-box_template_merge_sub-store",
+    "blurb": "把 sing-box 模板与 Sub-Store 订阅合并生成的脚本",
+    "category": "代理工具",
+    "tags": [
+      "Sub-Store",
+      "sing-box",
+      "模板"
+    ],
+    "stars": 158,
+    "language": "JavaScript",
+    "pushedAt": "2026-11-25T17:21:49Z"
+  },
+  {
+    "repo": "ATH-MaaS/Pixelle-Video",
+    "blurb": "AI 短视频引擎：文案、配图、配音、合成一键成片",
+    "category": "AI工具",
+    "tags": [
+      "AI视频",
+      "短视频"
+    ],
+    "stars": 30572,
+    "language": "Python",
+    "pushedAt": "2026-06-14T12:40:58Z"
+  }
+]
