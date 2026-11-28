@@ -12,18 +12,6 @@
     "pushedAt": "2026-11-27T22:11:43Z"
   },
   {
-    "repo": "jub0t/Concat",
-    "blurb": "开源的 CapCut 替代品，免费的本地视频剪辑工具",
-    "category": "影音工具",
-    "tags": [
-      "视频剪辑",
-      "开源"
-    ],
-    "stars": 22523,
-    "language": "Rust",
-    "pushedAt": "2026-11-27T19:52:13Z"
-  },
-  {
     "repo": "FrizzleM/SideInstaller",
     "blurb": "在 iOS 设备上全程本地安装 SideStore 的侧载安装器，无需电脑",
     "category": "系统工具",
